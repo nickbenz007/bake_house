@@ -130,4 +130,4 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 
 ## Contact
 
-For any inquiries, please contact [nickbenz007@example.com](mailto:nickbenz007@gmail.com).
+For any inquiries, please contact [nickbenz007@gmail.com](mailto:nickbenz007@gmail.com).
