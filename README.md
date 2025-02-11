@@ -10,6 +10,8 @@ This project leverages the following technologies:
 - **TypeScript**: A typed superset of JavaScript that compiles to plain JavaScript.
 - **Vite**: A fast build tool and development server.
 - **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
+- **GSAP**: A JavaScript library for creating high-performance animations.
+- **@gsap/react**: GSAP plugin for React integration.
 
 ## Plugins
 
@@ -90,6 +92,7 @@ To get started with the project, follow these steps:
    ```
 
 5. **Preview the production build**:
+
    ```sh
    yarn preview
    ```
