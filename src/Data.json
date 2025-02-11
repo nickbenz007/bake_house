@@ -1,0 +1,124 @@
+{
+    "explore": {
+      "Cake": [
+        "/assets/explore_1.png",
+        "/assets/explore_2.png",
+        "/assets/explore_3.png",
+        "/assets/explore_4.png",
+        "/assets/explore_5.png",
+        "/assets/explore_6.png"
+      ],
+      "Muffins": [
+        "/assets/muffin_1.jpg",
+        "/assets/muffin_2.jpg",
+        "/assets/muffin_3.jpg",
+        "/assets/muffin_4.jpg",
+        "/assets/muffin_5.jpg",
+        "/assets/muffin_6.jpg"
+      ],
+      "Croissant": [
+        "/assets/croissant_1.jpg",
+        "/assets/croissant_2.jpg",
+        "/assets/croissant_3.jpg",
+        "/assets/croissant_4.jpg",
+        "/assets/croissant_5.jpg",
+        "/assets/croissant_6.jpg"
+      ],
+      "Bread": [
+        "/assets/bread_1.jpg",
+        "/assets/bread_2.jpg",
+        "/assets/bread_3.jpg",
+        "/assets/bread_4.jpg",
+        "/assets/bread_5.jpg",
+        "/assets/bread_6.jpg"
+      ],
+      "Tart": [
+        "/assets/tart_1.jpg",
+        "/assets/tart_2.jpg",
+        "/assets/tart_3.jpg",
+        "/assets/tart_4.jpg",
+        "/assets/tart_5.jpg",
+        "/assets/tart_6.jpg"
+      ],
+      "Favorite": [
+        "/assets/favorite_1.jpg",
+        "/assets/favorite_2.jpg",
+        "/assets/favorite_3.jpg",
+        "/assets/favorite_4.jpg",
+        "/assets/favorite_5.jpg",
+        "/assets/favorite_6.jpg"
+      ]
+    },
+    
+    "products": [
+      {
+        "id": 1,
+        "card_bg_image": "/assets/card_bg.png",
+        "card_image_url": "/assets/free_photo_1.png",
+        "card_price": "$ 0.50",
+        "card_title": "Strawberry Bread",
+        "card_info": "Grandma recipe, the best of all time"
+      },
+      {
+        "id": 2,
+        "card_bg_image": "/assets/card_bg.png",
+        "card_image_url": "/assets/free_photo_2.png",
+        "card_price": "$ 0.70",
+        "card_title": "Grain Bread",
+        "card_info": "Grandma recipe, the best of all time"
+      },
+      {
+        "id": 3,
+        "card_bg_image": "/assets/card_bg.png",
+        "card_image_url": "/assets/free_photo_3.png",
+        "card_price": "$ 2.50",
+        "card_title": "Slices Bread",
+        "card_info": "Grandma recipe, the best of all time"
+      },
+      {
+        "id": 4,
+        "card_bg_image": "/assets/card_bg.png",
+        "card_image_url": "/assets/free_photo_4.png",
+        "card_price": "$ 4.50",
+        "card_title": "Italiano Bread",
+        "card_info": "Grandma recipe, the best of all time"
+      },
+      {
+        "id": 5,
+        "card_bg_image": "/assets/card_bg.png",
+        "card_image_url": "/assets/free_photo_5.png",
+        "card_price": "$ 3.50",
+        "card_title": "Americano Bread",
+        "card_info": "Grandma recipe, the best of all time"
+      },
+      {
+        "id": 6,
+        "card_bg_image": "/assets/card_bg.png",
+        "card_image_url": "/assets/free_photo.png",
+        "card_price": "$ 6.50",
+        "card_title": "Honey Cookie",
+        "card_info": "Grandma recipe, the best of all time"
+      }
+    ],
+
+    "feature_treats": [
+      {
+        "id": 1,
+        "card_image_url": "/assets/puffy_pastry.png",
+        "card_price": "$ 8.00",
+        "card_title": "Puffy Pastry"
+      },
+      {
+        "id": 2,
+        "card_image_url": "/assets/doughnuts.png",
+        "card_price": "$ 9.00",
+        "card_title": "Doughnuts"
+      },
+      {
+        "id": 3,
+        "card_image_url": "/assets/brownies.png",
+        "card_price": "$ 10.00",
+        "card_title": "Brownies"
+      }]
+  }
+  

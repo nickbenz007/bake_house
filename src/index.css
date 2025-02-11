@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+:root {
+  --font-poppins: "Poppins", sans-serif;
+  --font-sansita: "Sansita Swashed", serif;
+  --color-gold: #E9BD8C;
+  --color-brown: #933C24;
+}
+
+body {
+  font-family: var(--font-poppins);
+  color: var(--color-brown);
+}
+
+h1 {
+  color: var(--color-gold);
+}
+
+h2, h3 {
+  font-family: var(--font-sansita);
+}
+
+.learn-more {
+  color: var(--color-gold);
+}
