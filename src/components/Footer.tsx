@@ -28,7 +28,7 @@ export const Footer = () => {
             <a href="/">
               <img
                 className="w-20 h-20 object-cover"
-                src="/src/assets/footer_logo.png"
+                src="/assets/footer_logo.png"
                 alt="Logo"
               />
             </a>
@@ -59,7 +59,7 @@ export const Footer = () => {
                   >
                     <img
                       className="w-8 h-8 lg:w-10 lg:h-10 object-contain"
-                      src={`/src/assets/${icon}`}
+                      src={`/assets/${icon}`}
                       alt={`Social Icon ${index + 1}`}
                     />
                   </motion.a>
@@ -126,7 +126,7 @@ export const Footer = () => {
             </h2>
             <div className="flex w-full items-center justify-start">
               <img
-                src="/src/assets/muffin_1.jpg"
+                src="/assets/muffin_1.jpg"
                 className="w-14 h-14 m-4 object-cover bg-no-repeat pointer-events-none"
                 alt="Footer Image"
               />
@@ -141,7 +141,7 @@ export const Footer = () => {
             </div>
             <div className="flex w-full items-center justify-start">
               <img
-                src="/src/assets/muffin_1.jpg"
+                src="/assets/muffin_1.jpg"
                 className="w-14 h-14 m-4 object-cover bg-no-repeat pointer-events-none"
                 alt="Footer Image"
               />

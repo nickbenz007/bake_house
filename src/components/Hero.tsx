@@ -92,7 +92,7 @@ export const Hero = () => {
       {/* Background Image */}
       <img
         className="w-full object-cover pointer-events-none bg-no-repeat"
-        src="/src/assets/hero.png"
+        src="/assets/hero.png"
         alt="Hero"
       />
 

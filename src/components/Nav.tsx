@@ -56,7 +56,7 @@ export const Nav = () => {
           <img
             ref={logoRef}
             className="w-16 h-16 p-1 rounded-xl object-cover"
-            src="/src/assets/logo.png"
+            src="/assets/logo.png"
             alt="Logo"
           />
         </a>

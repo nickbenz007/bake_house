@@ -21,14 +21,6 @@ export const TopProducts = () => {
           scale: 1,
           duration: 2.5,
           ease: 'bounce.inOut',
-          scrollTrigger: {
-            trigger: el, // ✅ Animate each card separately
-            start: 'top 80%', // ✅ Start animation when 80% visible
-            end: 'top 30%',
-            scrub: true,
-            markers: true,
-            toggleActions: 'play none none reverse', // ✅ Reverses animation when scrolling up
-          },
         }
       );
     });
