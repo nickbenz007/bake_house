@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+
 export const Footer = () => {
   return (
     <div className="relative flex w-full bg-gray-900 bg-[url('/assets/footer_bg.png')] bg-cover bg-center">
@@ -7,54 +9,66 @@ export const Footer = () => {
       {/* Content on top of the background */}
       <div className="relative flex flex-col w-full items-center justify-center xl:px-44 lg:px-20 px-8">
         <div className="flex flex-row w-full items-center justify-between py-8">
-          {/* Logo Section */}
-          <div className="flex items-center justify-center">
+          {/* Logo Section with Animation */}
+          <motion.div
+            className="flex items-center justify-center"
+            initial={{ rotateY: 0, scale: 1 }}
+            animate={{
+              rotateY: [0, 360, 360],
+              scale: [1, 1.2, 1],
+            }}
+            transition={{
+              delay: 7, // Wait 7 seconds before starting animation
+              duration: 2, // Rotate duration
+              ease: 'easeInOut',
+              repeat: Infinity, // Keep looping
+              repeatDelay: 3, // Pause before repeating
+            }}
+          >
             <a href="/">
               <img
-                className="w-20 h-20 object-cover hover:scale-110 transition-all duration-150"
-                src="/assets/footer_logo.png"
+                className="w-20 h-20 object-cover"
+                src="/src/assets/footer_logo.png"
                 alt="Logo"
               />
             </a>
-          </div>
+          </motion.div>
 
-          {/* Social Media Section */}
+          {/* Social Media Section with Staggered Shaking Animation */}
           <div className="flex md:flex-row flex-col items-center text-center">
             <h4 className="text-lg lg:text-3xl text-[var(--color-gold)] font-normal tracking-wider m-4">
               Follow Us:
             </h4>
             <div className="flex gap-6">
-              <a href="/">
-                <img
-                  className="w-8 h-8 lg:w-10 lg:h-10 object-contain hover:scale-110 transition-all duration-150"
-                  src="/assets/Vector1.png"
-                  alt="Instagram"
-                />
-              </a>
-              <a href="/">
-                <img
-                  className="w-8 h-8 lg:w-10 lg:h-10 object-contain hover:scale-110 transition-all duration-150"
-                  src="/assets/Vector2.png"
-                  alt="Pintrest"
-                />
-              </a>
-              <a href="/">
-                <img
-                  className="w-8 h-8 lg:w-10 lg:h-10 object-contain hover:scale-110 transition-all duration-150"
-                  src="/assets/Vector3.png"
-                  alt="WhatsApp"
-                />
-              </a>
-              <a href="/">
-                <img
-                  className="w-8 h-8 lg:w-10 lg:h-10 object-contain hover:scale-110 transition-all duration-150"
-                  src="/assets/Vector4.png"
-                  alt="Facebook"
-                />
-              </a>
+              {['Vector1.png', 'Vector2.png', 'Vector3.png', 'Vector4.png'].map(
+                (icon, index) => (
+                  <motion.a
+                    key={index}
+                    href="/"
+                    initial={{ rotate: 0 }}
+                    animate={{
+                      rotate: [-5, 5, -5, 0],
+                    }}
+                    transition={{
+                      delay: 2 + index * 1.5, // Stagger effect
+                      duration: 0.6,
+                      ease: 'easeInOut',
+                      repeat: Infinity,
+                      repeatDelay: 4,
+                    }}
+                  >
+                    <img
+                      className="w-8 h-8 lg:w-10 lg:h-10 object-contain"
+                      src={`/src/assets/${icon}`}
+                      alt={`Social Icon ${index + 1}`}
+                    />
+                  </motion.a>
+                )
+              )}
             </div>
           </div>
         </div>
+
         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-full h-auto lg:gap-8 gap-16">
           {/* About Us Section */}
           <div className="col-span-1 flex flex-col items-start text-center">
@@ -112,7 +126,7 @@ export const Footer = () => {
             </h2>
             <div className="flex w-full items-center justify-start">
               <img
-                src="/assets/muffin_1.jpg"
+                src="/src/assets/muffin_1.jpg"
                 className="w-14 h-14 m-4 object-cover bg-no-repeat pointer-events-none"
                 alt="Footer Image"
               />
@@ -127,7 +141,7 @@ export const Footer = () => {
             </div>
             <div className="flex w-full items-center justify-start">
               <img
-                src="/assets/muffin_1.jpg"
+                src="/src/assets/muffin_1.jpg"
                 className="w-14 h-14 m-4 object-cover bg-no-repeat pointer-events-none"
                 alt="Footer Image"
               />

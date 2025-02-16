@@ -4,7 +4,7 @@ export const Banner = () => {
       <div className="relative w-full h-full">
         {/* Background Image */}
         <img
-          src="/assets/banner_1.png"
+          src="/src/assets/banner_1.png"
           alt="Banner One"
           className="w-full h-full object-contain pointer-events-none bg-no-repeat"
         />

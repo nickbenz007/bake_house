@@ -12,22 +12,21 @@ export const Nav = () => {
 
   useGSAP(() => {
     gsap.to(logoRef.current, {
-      y: -10, // Slight bounce movement
-      duration: 1,
-      repeat: -1, // Infinite loop
-      yoyo: true, // Moves back and forth
+      scale: '-=0.1',
+      duration: 2,
+      repeat: -1,
+      yoyo: true,
       ease: 'power1.inOut',
     });
 
     gsap.to(logoRef.current, {
-      // rotateY: 150,
       duration: 5,
       repeat: -1,
       ease: 'power2.inOut',
     });
 
     gsap.to(logoRef.current, {
-      boxShadow: '0px 0px 20px rgba(255, 215, 0, 0.8)',
+      boxShadow: '0px 0px 20px rgba(255, 215, 0, 0.9)',
       duration: 1,
       repeat: -1,
       yoyo: true,
@@ -56,8 +55,8 @@ export const Nav = () => {
         <a href="/" className="flex items-center justify-center">
           <img
             ref={logoRef}
-            className="w-16 h-16 p-1 rounded-xl object-cover hover:scale-110 transition-all duration-150"
-            src="/assets/logo.png"
+            className="w-16 h-16 p-1 rounded-xl object-cover"
+            src="/src/assets/logo.png"
             alt="Logo"
           />
         </a>

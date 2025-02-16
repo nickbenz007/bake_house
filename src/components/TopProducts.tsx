@@ -1,6 +1,39 @@
+import { useRef } from 'react';
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
 import Data from '../Data.json';
 
+gsap.registerPlugin(useGSAP);
+
 export const TopProducts = () => {
+  const imageRef = useRef<HTMLDivElement[]>([]);
+
+  useGSAP(() => {
+    imageRef.current.forEach((el) => {
+      if (!el) return; // ✅ Ensure element exists before applying GSAP
+
+      gsap.fromTo(
+        el,
+        { opacity: 0, y: 50, scale: 1.2 }, // Initial State
+        {
+          opacity: 1,
+          y: 0,
+          scale: 1,
+          duration: 2.5,
+          ease: 'bounce.inOut',
+          scrollTrigger: {
+            trigger: el, // ✅ Animate each card separately
+            start: 'top 80%', // ✅ Start animation when 80% visible
+            end: 'top 30%',
+            scrub: true,
+            markers: true,
+            toggleActions: 'play none none reverse', // ✅ Reverses animation when scrolling up
+          },
+        }
+      );
+    });
+  }, []);
+
   return (
     <div className="flex flex-col items-center justify-start bg-gray-900">
       {/* Section Heading */}
@@ -26,6 +59,9 @@ export const TopProducts = () => {
                 <div>
                   {/* Product Image */}
                   <img
+                    ref={(el) => {
+                      if (el) imageRef.current[i] = el;
+                    }}
                     className="object-contain pointer-events-none bg-no-repeat"
                     src={el.card_image_url}
                     alt="Product Image"

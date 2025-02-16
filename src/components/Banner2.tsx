@@ -4,7 +4,7 @@ export const Banner2 = () => {
       <div className="relative w-full h-full">
         {/* Background Image */}
         <img
-          src="/assets/banner_2.png"
+          src="/src/assets/banner_2.png"
           alt="Banner One"
           className="w-full h-full object-contain pointer-events-none bg-no-repeat"
         />
@@ -14,7 +14,7 @@ export const Banner2 = () => {
           <h2 className="lg:text-6xl text-2xl text-white sm:text-5xl font-semibold tracking-wider">
             About Us
           </h2>
-          <p className="text-sm lg:text-xl font-normal text-gray-200 lg:max-w-[90%] max-w-md lg:my-8 my-2">
+          <p className="text-sm lg:text-xl font-normal text-gray-200 max-w-[90%] lg:max-w-md lg:my-8 my-2">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
             consectetur adipisicing elit. Quasi, eveniet!
           </p>
